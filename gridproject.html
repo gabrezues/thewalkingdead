@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid Project</title>
+
+<style type="text/css">
+
+
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.container {
+		display: grid;
+		grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+		grid-template-rows: 3fr 5fr 3fr;
+		grid-template-areas:
+			"p1 p1 p2 p3 p3"
+			"p4 lo lo lo p5"
+			"p6 p6 p7 p8 p8";
+		min-height: 100vh;
+		grid-gap: 10px;
+		padding: 30px;
+	}
+
+	.item {
+		min-width: 200px
+		min-height: 200px;
+	}
+
+	#photo1 {
+		grid-area: p1;
+		background: url(abraham.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	#photo2 {
+		grid-area: p2;
+		background: url(andrea.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	#photo3 {
+		grid-area: p3;
+		background: url(carl.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	#photo4 {
+		grid-area: p4;
+		background: url(glenn.png);
+		background-size: cover;
+		background-position: center;
+	}
+	#logo {
+		grid-area: lo;
+		background: url(logo.png);
+		background-size: cover;
+		background-position: center;
+	}
+	#photo5 {
+		grid-area: p5;
+		background: url(michonne.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	#photo6 {
+		grid-area: p6;
+		background: url(paul.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	#photo7 {
+		grid-area: p7;
+		background: url(rick.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	#photo8 {
+		grid-area: p8;
+		background: url(sophia.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="item" id="photo1">
+		</div>
+		<div class="item" id="photo2">
+		</div>
+		<div class="item" id="photo3">
+		</div>
+		<div class="item" id="photo4">
+		</div>
+		<div class="item" id="logo">
+		</div>
+		<div class="item" id="photo5">
+		</div>
+		<div class="item" id="photo6">
+		</div>
+		<div class="item" id="photo7">
+		</div>
+		<div class="item" id="photo8">
+		</div>
+
+
+
+
+
+
+	</div>
+</body>
+</html>
